@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Notas - Colegio Lorenzo de Alcantuz</title>
+    <link rel="stylesheet" href="css/gestion_notas.css">
+    <link rel="icon" href="imagenes/logo_colegio.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="header-content">
+            <img src="imagenes/logo_colegio.png" alt="Logo del Colegio" class="logo">
+            <div class="text">
+                <h1>Colegio Lorenzo de Alcantuz</h1>
+                <p>Honor, Libertad y Ciencia</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="inicio_est.html">Estudiantes</a></li>
+            <li><a href="inicio_pro.html">Profesores</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="gestion_notas.html">Gestión de Notas</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido de Gestión de Notas -->
+    <section class="gestion-notas">
+        <h2>Gestión de Notas</h2>
+        <table class="tabla-notas">
+            <thead>
+                <tr>
+                    <th>Estudiante</th>
+                    <th>Materia</th>
+                    <th>Nota</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Juan Pérez</td>
+                    <td>Matemáticas</td>
+                    <td><input type="number" value="85" min="0" max="100"></td>
+                    <td><button class="guardar-btn">Guardar</button></td>
+                </tr>
+                <tr>
+                    <td>María Gómez</td>
+                    <td>Ciencias</td>
+                    <td><input type="number" value="90" min="0" max="100"></td>
+                    <td><button class="guardar-btn">Guardar</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Colegio Lorenzo de Alcantuz</p>
+            <div class="footer-sections">
+                <a href="contacto.html">Contacto</a>
+                <a href="mision_vision.html">Nuestra Misión</a>
+                <a href="mision_vision.html">Nuestra Visión</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="redes_sociales.html">Redes Sociales</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="javascrip/gestion_notas.js"></script>
+</body>
+</html>

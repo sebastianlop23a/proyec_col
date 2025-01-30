@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal Estudiante</title>
+    <meta name="description" content="Página principal para estudiantes, consulta notas, boletines y más.">
+    <link rel="stylesheet" href="css/inicio_est.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="header">
+        <div class="user-info">
+            <img src="imagenes/logo_colegio.png" alt="Avatar del Usuario" class="user-avatar" loading="lazy">
+            <div>
+                <p>USUARIO</p>
+                <p>TIEMPO EN LA SECCIÓN: <span id="session-time">XX:XX</span></p>
+            </div>
+        </div>
+        <h1 class="welcome">Bienvenido XXXXX</h1>
+        <div class="notifications">
+            <button class="notify-button">99+</button>
+        </div>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="inicio_est.html">Inicio</a></li>
+            <li><a href="mis_notas.html">Mis Notas</a></li>
+            <li><a href="boletines_est.html">Boletines</a></li>
+            <li><a href="#">Calculadora de Notas</a></li>
+            <li><a href="circulares_est.html">Circulares</a></li>
+            <li><a href="index.html">cerrar secion</a></li>
+        </ul>
+    </nav>
+
+    <!-- Últimas circulares -->
+    <section class="circulares">
+        <h2>Últimas Circulares</h2>
+        <div class="carousel-container">
+            <button class="prev">Prev</button>
+            <div class="carousel">
+                <div class="circular">
+                    <h3>Heading 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    <button>Leer Más</button>
+                </div>
+                <div class="circular">
+                    <h3>Heading 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    <button>Leer Más</button>
+                </div>
+                <div class="circular">
+                    <h3>Heading 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    <button>Leer Más</button>
+                </div>
+            </div>
+            <button class="next">Next</button>
+        </div>
+    </section>
+
+  <!-- Próximos pagos de pensión -->
+<section class="pensiones">
+    <h2>Próximos Pagos de Pensión</h2>
+    <table class="tabla-pensiones">
+        <thead>
+            <tr>
+                <th>Ref #</th>
+                <th>Fecha Límite</th>
+                <th>Monto</th>
+                <th>Estado</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>#001</td>
+                <td>31/01/2025</td>
+                <td>$500</td>
+                <td>Pendiente</td>
+                <td><button class="pay-btn">Pagar</button></td>
+            </tr>
+            <tr>
+                <td>#002</td>
+                <td>28/02/2025</td>
+                <td>$500</td>
+                <td>Pendiente</td>
+                <td><button class="pay-btn">Pagar</button></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    </section>
+    <section>
+        <div class="notas">
+            <h2>Tus últimas notas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ref #</th>
+                        <th>Nombre</th>
+                        <th>Fecha</th>
+                        <th>Email</th>
+                        <th>Teléfono</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#001</td>
+                        <td>Adam Smith</td>
+                        <td>05/01/2024</td>
+                        <td>adam@mail.com</td>
+                        <td>+1 98765 43210</td>
+                        <td><button>Ver</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Promedio de materias -->
+    <section class="grafica">
+        <h2>Promedio de materias</h2>
+        <canvas id="chart"></canvas>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script src="javascrip/inicio_est.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Colegio Lorenzo de Alcantuz</title>
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="icon" href="imagenes/logo_colegio.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="header-content">
+            <img src="imagenes/logo_colegio.png" alt="Logo del Colegio" class="logo">
+            <div class="text">
+                <h1>Colegio Lorenzo de Alcantuz</h1>
+                <p>Honor, Libertad y Ciencia</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="inicio_est.html">Estudiantes</a></li>
+            <li><a href="inicio_pro.html">Profesores</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Formulario de contacto -->
+    <section class="contacto">
+        <h2>Contacto</h2>
+        <form class="contacto-form" onsubmit="return enviarFormulario(event)">
+            <div class="input-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Colegio Lorenzo de Alcantuz</p>
+            <div class="footer-sections">
+                <a href="mision_vision.html">Nuestra Misión</a>
+                <a href="mision_vision.html">Nuestra Visión</a>
+                <a href="#">Servicios</a>
+                <a href="#">Redes Sociales</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="javascrip/contacto.js"></script>
+</body>
+</html>
